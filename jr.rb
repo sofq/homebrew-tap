@@ -5,21 +5,21 @@
 class Jr < Formula
   desc "Agent-friendly Jira CLI with structured JSON output and jq filtering"
   homepage "https://github.com/sofq/jira-cli"
-  version "0.8.6"
+  version "0.8.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sofq/jira-cli/releases/download/v0.8.6/jira-cli_0.8.6_darwin_amd64.tar.gz"
-      sha256 "9d9eae8387b4555d943170bee1e147633c2cffcb29af1af6f3d8938e1730ea68"
+      url "https://github.com/sofq/jira-cli/releases/download/v0.8.7/jira-cli_0.8.7_darwin_amd64.tar.gz"
+      sha256 "59a0d894faebf09564c023b59d3918ea945e24a18cbd3ccbe1908f203fdb3e6d"
 
       define_method(:install) do
         bin.install "jr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sofq/jira-cli/releases/download/v0.8.6/jira-cli_0.8.6_darwin_arm64.tar.gz"
-      sha256 "1313d2f7fafe8e45f98ddafbe866c32bb9b25895b376b92bcdb5bfda5512f0ef"
+      url "https://github.com/sofq/jira-cli/releases/download/v0.8.7/jira-cli_0.8.7_darwin_arm64.tar.gz"
+      sha256 "74080a06d38ab9deef3756f0bba3be6721ed013fd96eb54ffc164355b64ee434"
 
       define_method(:install) do
         bin.install "jr"
@@ -29,15 +29,15 @@ class Jr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sofq/jira-cli/releases/download/v0.8.6/jira-cli_0.8.6_linux_amd64.tar.gz"
-      sha256 "3e9005be0b0131342dd65462553f23480f905fad5ffa082b2b577cc47c9aa2e6"
+      url "https://github.com/sofq/jira-cli/releases/download/v0.8.7/jira-cli_0.8.7_linux_amd64.tar.gz"
+      sha256 "42d8cdce724592bd76b15f1d9229467723c96690a62c58e28b664fd64244052e"
       define_method(:install) do
         bin.install "jr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sofq/jira-cli/releases/download/v0.8.6/jira-cli_0.8.6_linux_arm64.tar.gz"
-      sha256 "d1414d91e6f9196dcd9f2db6caf5b3f555207ef98aa387d020862d67c1c66a65"
+      url "https://github.com/sofq/jira-cli/releases/download/v0.8.7/jira-cli_0.8.7_linux_arm64.tar.gz"
+      sha256 "ea95f48e6f28ea099ededca708361b559e6b5222ed412344a670d3a5bba4ec7f"
       define_method(:install) do
         bin.install "jr"
       end
