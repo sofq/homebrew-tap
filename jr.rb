@@ -11,7 +11,7 @@ class Jr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sofq/jira-cli/releases/download/v1.0.0/jira-cli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "ccccc2ef4011e46667a72c30ddbf6a4e8d54be3545299eef14d2d100c8d522e0"
+      sha256 "ed152337e9e791074e525f7b6dfa249e800497396167dc4c727f0a520fbc44a0"
 
       define_method(:install) do
         bin.install "jr"
@@ -19,7 +19,7 @@ class Jr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/sofq/jira-cli/releases/download/v1.0.0/jira-cli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "e79d26d7519592a0227dd9297d8b23b0b3683b2fe68faf0e765d801d5e5365d3"
+      sha256 "9c72d9ea5ebe1762796b9dbaec6a6a22ca6b81f4e70907e181c6bf7017aa6581"
 
       define_method(:install) do
         bin.install "jr"
@@ -30,14 +30,14 @@ class Jr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/sofq/jira-cli/releases/download/v1.0.0/jira-cli_1.0.0_linux_amd64.tar.gz"
-      sha256 "25e1a28067cff5330f4b585b5769a9115fa2443377a4431f7ead93646c8a382a"
+      sha256 "6ef823e8d4634eb949ab8c0e7c0d62945e771537858588458f4e7f4a5a9d6e45"
       define_method(:install) do
         bin.install "jr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/sofq/jira-cli/releases/download/v1.0.0/jira-cli_1.0.0_linux_arm64.tar.gz"
-      sha256 "840c5b6042d95ed680f8000ec3aa2dd254d814f908e1069e7ea060b667627513"
+      sha256 "fcaf2a29f68567d78fbbeb258d43eb82f22787e4eef7b0dde0481590af4291ff"
       define_method(:install) do
         bin.install "jr"
       end
