@@ -5,21 +5,21 @@
 class Cf < Formula
   desc "Agent-friendly Confluence CLI with structured JSON output and jq filtering"
   homepage "https://github.com/sofq/confluence-cli"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sofq/confluence-cli/releases/download/v0.2.0/confluence-cli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "0b45f55b6163bc47579691bfde178d5c201f9144d33d2281ac69c345aa49909a"
+      url "https://github.com/sofq/confluence-cli/releases/download/v0.2.1/confluence-cli_0.2.1_darwin_amd64.tar.gz"
+      sha256 "8cdbbee81bfa67fb3a6fb1bb28dbbf03f2c01e138df232a5589254f7ec9e0403"
 
       define_method(:install) do
         bin.install "cf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sofq/confluence-cli/releases/download/v0.2.0/confluence-cli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "bf356da9b71a4b9c8ad255f95b4361ed53987c9682ea38be6343cb1d15c6a7b2"
+      url "https://github.com/sofq/confluence-cli/releases/download/v0.2.1/confluence-cli_0.2.1_darwin_arm64.tar.gz"
+      sha256 "1bcf4d0cd8077037ab52f051d636efab5023c693b246078b2be45544e549e097"
 
       define_method(:install) do
         bin.install "cf"
@@ -29,15 +29,15 @@ class Cf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sofq/confluence-cli/releases/download/v0.2.0/confluence-cli_0.2.0_linux_amd64.tar.gz"
-      sha256 "c14fef627066c319099b8c4898dceb8825e92bd0cd4e4aebcd6ca12f841da415"
+      url "https://github.com/sofq/confluence-cli/releases/download/v0.2.1/confluence-cli_0.2.1_linux_amd64.tar.gz"
+      sha256 "f7ab82fc5028e3403a80ea01ef25fd430c99b1dc114db4581c616def7850f6dc"
       define_method(:install) do
         bin.install "cf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sofq/confluence-cli/releases/download/v0.2.0/confluence-cli_0.2.0_linux_arm64.tar.gz"
-      sha256 "6d281d39bd394552fd36ec06ef089f28dff2a5dfd491f494157ae9f2907305d9"
+      url "https://github.com/sofq/confluence-cli/releases/download/v0.2.1/confluence-cli_0.2.1_linux_arm64.tar.gz"
+      sha256 "36cbb221931d520c9d376297ad3b26006c3f1fdeac1345eafeaabb0284f7686e"
       define_method(:install) do
         bin.install "cf"
       end
